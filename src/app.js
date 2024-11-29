@@ -13,4 +13,14 @@ app.use(express.urlencoded({extended:true , limit:"16kb"})); // this is to accep
 app.use(express.static("public")); // It is used to store images,pdf and other things in public folder. 
 app.use(cookieParser());
 
+
+// routes import
+
+import userRouter from './routes/user.routes.js'
+
+// routes declaration
+app.use("/api/v1/users",userRouter)
+
+// http://localhost:8000/ap1/v1/users/register
+
 export {app}
