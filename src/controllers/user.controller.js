@@ -13,7 +13,7 @@ const registerUser = asyncHandler(async(req,res)=>{
     
     //Step 2:- validation- not empty
     // Method 1:- Basic way of doing validation
-
+ 
     // if(fullName === ""){
     //     throw new ApiError(400,"fullname is required")
     // }
